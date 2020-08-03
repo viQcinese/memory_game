@@ -1,7 +1,6 @@
 // DOM ELEMENTS
-banner = document.querySelector(".banner")
-banner = document.querySelector(".gamebar")
 gameDisplay = document.querySelector(".gamedisplay")
+gameButton = document.querySelector("#gamebutton")
 
 // =========================
 //           UI CTRL       
@@ -52,7 +51,11 @@ const UICtrl = (function(){
   return {
 
     init: function() {
+      this.cleanImages()
+      this.displayImages()
+    },
 
+    displayImages: function() {
       const urlList = buildUrlList(imgUrls)
       const defaultImg = imgDefault
 
@@ -63,6 +66,11 @@ const UICtrl = (function(){
         image.className = "active"
         gameDisplay.appendChild(image)
       }
+    },
+
+    cleanImages: function() {
+      const images = document.querySelectorAll("img") 
+      images.forEach( image => image.remove() )
     },
 
     revealImg: function(element) {
@@ -102,7 +110,7 @@ const GameCtrl = (function(){
         e2.classList.remove("current")
         e1 = undefined;
         e2 = undefined;
-      }, 700)
+      }, 500)
     }
   }
 
@@ -112,8 +120,6 @@ const GameCtrl = (function(){
 
       if (!e.target.classList.contains("current") &&
         	e.target.classList.contains("active")) {
-
-          console.log(e.target)
 
         if (!e1) {
           e1 = e.target
@@ -132,10 +138,15 @@ const GameCtrl = (function(){
     }
   }
 
+  const clickBtn = function() {
+    UICtrl.init();
+  }
+
   return {
     
     init: function() {
       gameDisplay.addEventListener('click', clickImg)
+      gameButton.addEventListener('click', clickBtn)
     }
 
   }

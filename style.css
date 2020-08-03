@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,24 +6,47 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: rgb(59, 58, 63);
+  font-family: 'Mulish', sans-serif;
+  color: white;
+  background-color: #232323;
+  font-family: 'Muli', sans-serif;
+	font-size: 1em;
+}
+
+h1 {
+  font-size: 2.5em;
+	letter-spacing: 10px;
+	font-weight: 400;
 }
 
 .banner {
   width: 100%;
-  background-color: teal;
+  background-color: steelblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 100px;
+  margin-bottom: 25px;
 }
 
-.gamebar {
-  width: 100%;
-  background-color: thistle;
-  margin-bottom: 20px;
+#gamebutton {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 1.2em;
+  border-radius: 10x;;
+  padding: 10px;
+  outline: none;
+
+}
+
+#gamebutton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .gamedisplay {
