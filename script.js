@@ -1,6 +1,6 @@
 // DOM ELEMENTS
 gameDisplay = document.querySelector(".gamedisplay")
-gameButton = document.querySelector("#gamebutton")
+gameButton = document.querySelector(".banner button")
 
 // =========================
 //           UI CTRL       
