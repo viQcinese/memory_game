@@ -10,16 +10,16 @@ const UICtrl = (function(){
   const imgDefault = "https://psi.opsicologoonline.com.br/assets/img/foto-perfil-default.png"
 
   const imgUrls = [
-    "https://avatarfiles.alphacoders.com/124/thumb-124988.png",
-    "https://avatarfiles.alphacoders.com/979/thumb-97920.png",
-    "https://avatarfiles.alphacoders.com/837/thumb-83705.png",
-    "https://avatarfiles.alphacoders.com/125/thumb-125742.png",
-    "https://avatarfiles.alphacoders.com/699/thumb-69905.png",
-    "https://avatarfiles.alphacoders.com/827/thumb-82734.jpg", 
-    "https://i.pinimg.com/474x/db/15/ad/db15ad50a4022242d3fb8ddc1aa47548.jpg",
-    "https://i.pinimg.com/originals/ef/b8/eb/efb8eb427dc6c0f35a3d72a82b0dee62.png",
-    "https://avatarfiles.alphacoders.com/188/thumb-188870.jpg",
-    "https://avatarfiles.alphacoders.com/125/thumb-125098.png"
+      "./images/avatar-1.png",
+      "./images/avatar-2.png",
+      "./images/avatar-3.png",
+      "./images/avatar-4.png",
+      "./images/avatar-5.png",
+      "./images/avatar-6.jpg",
+      "./images/avatar-7.jpg",
+      "./images/avatar-8.png",
+      "./images/avatar-9.jpg",
+      "./images/avatar-10.png",
     ]
 
     const shuffle = function (arr){
